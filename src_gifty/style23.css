@@ -1,0 +1,37 @@
+.product_wrapper {
+	float:left;
+	padding-bottom:40px;
+	padding-right:40px;
+	margin-left:15%;
+	text-align: center;
+	max-width:30%;
+	position:relative;
+
+	
+	}
+.product_wrapper:hover {
+	box-shadow: 0 0 0 2px #e5e5e5;
+	cursor:pointer;
+	}
+.product_wrapper .name {
+	font-weight:bold;
+	}
+.image img {
+	width: 60%;
+	position :relative;
+
+}
+.product_wrapper .buy {
+	text-transform: uppercase;
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 40px;
+    margin-top: 10px;
+	
+}
+.product_wrapper .buy:hover {
+	background: grey;
+    border-color: grey;
+}

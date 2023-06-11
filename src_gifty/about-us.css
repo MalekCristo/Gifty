@@ -1,0 +1,498 @@
+body {
+  font-family:sans-serif;
+  padding:0;
+  margin-left: -5px;
+}
+/* Navigation bar settings */
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #000000	;
+  --text-secondary: #000000;
+  --bg-primary:    darkgrey ;
+  --bg-secondary: darkgrey ;
+  --transition-speed: 600ms;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+.navbar {
+  z-index:10;
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  overflow: scroll;
+}
+
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #a85913;
+}
+
+.fa-secondary {
+  color: #000000;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+/* Rotation of the hompage icon */
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
+html {
+overflow: scroll;
+}
+::-webkit-scrollbar {
+width: 0px; /* remove scrollbar space /
+background: transparent; / optional: just make scrollbar invisible /
+}}
+/ *optional: show position indicator in red */
+background: #FF0000;}
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #a85913;
+  --bg-primary: #23232e;
+  --bg-secondary: #23232e;
+}
+* {box-sizing: border-box;}
+/* Scrollbar properties */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #222228;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #222228;
+}
+/* Size */
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+
+
+.all{
+	 margin-left:90px;
+	margin-right:40px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ #header{font-size:50px;
+	      color:#4d1a00;}
+ #quote{font-size:20px;}
+
+
+.about-section {
+  background-repeat:no-repeat;
+  background-size:cover;
+ 
+  margin-left:0;
+  margin-right:0;
+  text-align: center;
+  opacity:0.8;
+  }
+
+h2{color:#00995c;}
+
+h3{
+	text-align:center; 
+	font-size:50px;
+	color:black;
+}
+
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:black;
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  border-radius: 25px;
+  transition: transform .2s; /* Animation */
+}
+
+.button:hover {
+  background-color:#ffbb99 ;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color:black;
+  text-align: center;
+  cursor: pointer;
+  width:100%;
+  border-radius: 25px;
+}
+
+.button1:hover {
+  background-color:#ffbb99 ;
+}
+#abt-us{padding: 80px;
+  text-align: center;
+color: black;
+font-size:20px;}
+
+
+#st{background-image:url("birth.jpg");
+background-size:cover;
+background-repeat:no-repeat;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 30%;
+  position: relative;
+  margin-left:35%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+   transition: transform .2s;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+   transition: transform .2s;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:black;
+  transform: scale(1.4);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffbb99;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+#team{
+  background-image:url("back4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  background-image:url("back4.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  opacity:0.9;
+  text-align:center;
+  transition: transform .2s; /* Animation */
+}
+.card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.columnn{
+  float: left;
+  background-image:url("birth5.jpg");
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* values
+/* The grid: four equal columns that floats next to each other */
+.columnnn {
+  float: left;
+  width: 50%;
+  padding: 150px;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  color: black;
+}
+.columnnn2 {
+  float: left;
+  width:50%;
+  padding: 100px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+
+/* form */
+input {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-family: "Muli-Bold";
+  background: none; 
+  margin-left:20px;
+  }
+input:focus {
+border: 1px solid #ae3c33; }
+textarea{
+  border: 1px solid #ccc;
+  width: 53%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-family: "Muli-Bold";
+  background: none;
+  margin-left:20px;
+}
+textera:focus {
+border: 1px solid #ae3c33; 
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 
+  opacity:0.7;
+
+}
+
+/*footer*/
+
+
+
+

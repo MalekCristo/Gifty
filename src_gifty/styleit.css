@@ -1,0 +1,612 @@
+
+ /**********************Donation Part*****************/
+.donation {
+  background-image: url("93652181_1487884051382904_1115959076187013120_n.jpg");
+  
+  background-repeat:no-repeat;
+  background-size:cover;  
+  width:100%;
+  margin: 0;
+  height: 500px;
+}
+
+.bgimg {
+  margin-left:16rem;
+  height: 100%;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width:150px;
+  height: 75px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+hr {
+	border: 10px solid #04d399;
+  margin: auto;
+  width: 40%;
+}
+
+
+
+ /********Quarantine boxes*********/
+
+
+.img-comp-container {
+  position: relative;
+  height: 400px; 
+  margin-left: 440px;
+  
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.title{
+	position: relative;
+	margin-left: 600px;
+	margin-top: 10px;
+}
+
+.title{
+	position: relative;
+	margin-left: 600px;
+	margin-top: 10px;
+}
+.title button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 15px;
+}
+
+.title button:hover {
+  opacity: 0.7;
+}
+
+#text{
+  padding-top: 40px;
+  display: block;
+  text-align: center;
+}
+
+
+#text h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 30px auto;
+  padding-left: 40px;
+  text-align: center;
+}
+
+/* image gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 600PX;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.image_gallery1{
+	background-color: white;
+	Height:500px;
+	width:100%;
+	padding-left:50PX;
+}
+.image_gallery2{
+	background-color: white;
+	Height:500px;
+	width:100%;
+	padding-left:50PX;
+}
+#b  {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: GREY;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 15px;
+  margin-left:100PX;
+}
+
+.gallery button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+	
+		  
+.card{
+  background-image:url("5866d84ef21811b84a04b0dee1b7631f.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}	
+	  
+.theme1{
+  background-image:url("5866d84ef21811b84a04b0dee1b7631f.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+
+/* flip cards */
+
+.theme2{
+
+  width: 100%;
+  height: 600px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+/* flip card 1*/
+.flip-card1 {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  float: left;
+  margin-left: 10px;
+}
+
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front1 {
+  background-color: pink;
+  color: black;
+}
+
+.flip-card-back1 {
+  background-color: #F9ACCB;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.flip-card-back1 button:hover {
+  opacity: 0.7;
+}
+
+/* flip card 2*/
+
+
+.flip-card2 {
+  float: Left;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+	  
+
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front2 {
+  background-color: pink;
+  color: black;
+}
+
+.flip-card-back2{
+  background-color: #C3C2CC;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.flip-card-back2 button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/* flip card 3*/
+
+
+.flip-card3 {
+  float: right;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin-right: 10px;
+}
+	  
+
+
+.flip-card-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front3, .flip-card-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front3 {
+  background-color: #F4D2F2 ;
+  color: black;
+}
+
+.flip-card-back3{
+  background-color: #F4D2F2;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.flip-card-back3 button:hover {
+  opacity: 0.7;
+}
+	  
+
+/* image gallery */
+.theme3{
+
+  width: 100%;
+  height: 500px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 0px;
+}
+
+
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 3px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}	  
+.desc button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}	  
+.desc button:hover {
+  opacity: 0.7;
+}  
+
+
+/* theme3 */
+
+
+/* slider text effect */
+
+#slider-text{
+  padding-top: 40px;
+  display: block;
+}
+#slider-text .col-md-6{
+  overflow: hidden;
+}
+
+#slider-text h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 30px auto;
+  padding-left: 40px;
+}
+#slider-text h2::after{
+  border-top: 2px solid #c7c7c7;
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  }
+
+/* image slider */
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: grey;
+  font-size: 12px;
+  padding: 8px 370px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 200px;
+  width: 16.6%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ .slide {
+	 height: 400px;
+	 width: 400px;
+	
+	 margin-left: 360px;
+ }
+ .mySlides{
+	 background-image: url("5866d84ef21811b84a04b0dee1b7631f (1).jpg");
+	 background-size:cover;
+     background-repeat:no-repeat;
+ }
+
